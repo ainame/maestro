@@ -42,6 +42,8 @@
 		9494CBD12982F719009C987C /* ScreenshotHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CBD02982F719009C987C /* ScreenshotHandler.swift */; };
 		949535FC299FD67E00FD0159 /* XCTestHTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949535FB299FD67E00FD0159 /* XCTestHTTPServer.swift */; };
 		94A90DDE298AE72A006EB769 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A90DDD298AE72A006EB769 /* XCUIElement+Extensions.swift */; };
+		9951A30A29D749D50028F475 /* StoreKitTestingProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 9951A30929D749D50028F475 /* StoreKitTestingProxy */; };
+		9951A30C29D74AEF0028F475 /* StoreKitTestingProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 9951A30B29D74AEF0028F475 /* StoreKitTestingProxy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9951A30A29D749D50028F475 /* StoreKitTestingProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +111,7 @@
 			files = (
 				612DE40229801F71003C2BE0 /* XCTest.framework in Frameworks */,
 				5279BFD62935ECE20056C609 /* FlyingFox in Frameworks */,
+				9951A30C29D74AEF0028F475 /* StoreKitTestingProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +250,7 @@
 			);
 			name = "maestro-driver-ios";
 			packageProductDependencies = (
+				9951A30929D749D50028F475 /* StoreKitTestingProxy */,
 			);
 			productName = "maestro-driver-ios";
 			productReference = 52049BD32935039F00807AA3 /* maestro-driver-ios.app */;
@@ -267,6 +272,7 @@
 			name = "maestro-driver-iosUITests";
 			packageProductDependencies = (
 				5279BFD52935ECE20056C609 /* FlyingFox */,
+				9951A30B29D74AEF0028F475 /* StoreKitTestingProxy */,
 			);
 			productName = "maestro-driver-iosUITests";
 			productReference = 52049BF3293503A200807AA3 /* maestro-driver-iosUITests.xctest */;
@@ -287,7 +293,7 @@
 					};
 					52049BF2293503A200807AA3 = {
 						CreatedOnToolsVersion = 13.4.1;
-						LastSwiftMigration = 1420;
+						LastSwiftMigration = 1430;
 						TestTargetID = 52049BD22935039F00807AA3;
 					};
 				};
@@ -303,6 +309,7 @@
 			mainGroup = 52049BCA2935039F00807AA3;
 			packageReferences = (
 				52049C062935E04D00807AA3 /* XCRemoteSwiftPackageReference "FlyingFox" */,
+				9951A30829D749D50028F475 /* XCRemoteSwiftPackageReference "StoreKitTestingProxy" */,
 			);
 			productRefGroup = 52049BD42935039F00807AA3 /* Products */;
 			projectDirPath = "";
@@ -670,6 +677,14 @@
 				version = 0.9.1;
 			};
 		};
+		9951A30829D749D50028F475 /* XCRemoteSwiftPackageReference "StoreKitTestingProxy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ainame/StoreKitTestingProxy";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -677,6 +692,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52049C062935E04D00807AA3 /* XCRemoteSwiftPackageReference "FlyingFox" */;
 			productName = FlyingFox;
+		};
+		9951A30929D749D50028F475 /* StoreKitTestingProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9951A30829D749D50028F475 /* XCRemoteSwiftPackageReference "StoreKitTestingProxy" */;
+			productName = StoreKitTestingProxy;
+		};
+		9951A30B29D74AEF0028F475 /* StoreKitTestingProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9951A30829D749D50028F475 /* XCRemoteSwiftPackageReference "StoreKitTestingProxy" */;
+			productName = StoreKitTestingProxy;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

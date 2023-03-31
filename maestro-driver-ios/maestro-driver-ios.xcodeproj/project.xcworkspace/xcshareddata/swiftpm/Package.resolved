@@ -8,6 +8,15 @@
         "revision" : "ee0118895184f052a96b425869a76553864610a9",
         "version" : "0.9.1"
       }
+    },
+    {
+      "identity" : "storekittestingproxy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ainame/StoreKitTestingProxy",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a2b59902eb91e3a36aa02659f3bd4d785864b649"
+      }
     }
   ],
   "version" : 2
